@@ -1,0 +1,14 @@
+---
+title: "A minimal notebook to analyse test data\n"
+author: "Denis MOTTET"
+date: "`r format(Sys.time(), '%d %B, %Y, %H:%M')`"
+output:
+  html_document:
+    df_print: paged
+    code_folding: hide
+    toc: false
+    number_sections: true
+---
+
+lfv
+
