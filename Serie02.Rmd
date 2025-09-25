@@ -48,6 +48,14 @@ Below are some questions to guide your analysis.
 
 - Is PANU correlated with SANU and/or EENU?
 
+we use spearman correlation bc we do not have assumptions about the distributions of the data, and we do not assume linear relationships between the variables 
+
+```{r correlation}
+cor.test(nonuse$PANU, nonuse$SANU, method = "spearman")
+
+```
+
+
 - Visualize the PANU-SANU relationship (and the PANU-EENU relationship)
 
 - Perform a linear regression for PANU-SANU (and for PANU-EENU)
