@@ -20,6 +20,13 @@ As you will see, the data is far from perfect, but this is the reality of experi
 
 Download the file NonUse.csv from the course Moodle.
 
+```{r load data}
+nonuse <- read.csv("data/test_data/NonUse.csv", sep=',', header=TRUE)
+summary(nonuse)
+
+```
+
+
 This file contains measures of upper extremity nonuse:
 
     PANU: Proximal Arm Non Use
