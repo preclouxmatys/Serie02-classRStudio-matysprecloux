@@ -35,6 +35,14 @@ This file contains measures of upper extremity nonuse:
 
 In your notebook, make a clear description of the experiment, the variables and the data. Do not forget to give the units of each variable, and the range of possible values.
 
+| name | description | unit | range |
+|--    |---------     |--   |---    |
+| PANU | Proximal Arm Non Use         | ‰ | 0-100 |
+| SANU | Shoulder Antepulsion Non Use | ‰ | 0-100 |
+| EENU | Elbow Extension Non Use      | ‰ | 0-100 |
+
+
+
 ## Corelation analysis
 Below are some questions to guide your analysis.
 
