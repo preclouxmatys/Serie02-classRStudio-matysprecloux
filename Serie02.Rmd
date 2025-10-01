@@ -142,3 +142,7 @@ Our correlation and regression analyses showed that PANU was more strongly assoc
 - **Median:** the middle value when the data are ordered. Less sensitive to outliers.  
 *(Reference: Howell, 2013; Field, 2017)*
 
+## 2. What is a variance? A standard deviation?
+- **Variance:** the average of the squared differences between each value and the mean.  
+- **Standard deviation (SD):** the square root of the variance; expressed in the same units as the data.  
+*(Reference: Altman, 1991; Field, 2017)*
