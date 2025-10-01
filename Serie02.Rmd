@@ -150,7 +150,7 @@ Our correlation and regression analyses showed that PANU was more strongly assoc
 ## 3. What is a normal distribution?
 A bell-shaped, symmetrical distribution where mean = median = mode.  
 About 68% of data lie within 1 SD of the mean, 95% within 2 SD.  
-*(Reference: Altman & Bland, 1995, BMJ – open access)*
+*(Reference: Altman & Bland, 1995, BMJ)*
 
 ## 4. What is a statistical test?
 A statistical test is a method used to decide, based on data, whether an observed effect is likely real or due to chance.  
@@ -159,10 +159,17 @@ A statistical test is a method used to decide, based on data, whether an observe
 ## 5. When to use a statistical test?
 When comparing groups, testing relationships, or evaluating hypotheses.  
 Examples: comparing treatment vs control, testing correlation between two variables.  
-*(Reference: Derrick et al., 2017 – open access)*
+*(Reference: Derrick et al., 2017 )*
 
 ## 6. What is a parametric test? A non-parametric test?
 - **Parametric tests:** assume that data follow a certain distribution (usually normal). Examples: t-test, ANOVA, Pearson correlation.  
 - **Non-parametric tests:** make fewer assumptions about distribution. Examples: Mann–Whitney, Wilcoxon, Spearman correlation.  
-*(Reference: Politi et al., 2021 – open access)*
+*(Reference: Politi et al., 2021 )*
+
+## 7. What are the assumptions of parametric tests?
+- Normal distribution (or approximately normal).  
+- Homogeneity of variances.  
+- Independence of observations.  
+- Linearity (for regression).  
+*(Reference: Altman, 1991; Field, 2017)*
 
