@@ -135,4 +135,10 @@ Our correlation and regression analyses showed that PANU was more strongly assoc
 - Measurement errors (marker placement, motion capture noise, anthropometric estimations) may affect the precision of non-use scores.
 - Inter-individual variability (stroke severity, recovery stage, motor strategy) was not controlled, which could contribute to unexplained variance.
 
-⸻
+# 2.1 Statistical Concepts
+
+## 1. What is a median? A mean?
+- **Mean:** the sum of all values divided by the number of values. It is sensitive to extreme values (outliers).  
+- **Median:** the middle value when the data are ordered. Less sensitive to outliers.  
+*(Reference: Howell, 2013; Field, 2017)*
+
