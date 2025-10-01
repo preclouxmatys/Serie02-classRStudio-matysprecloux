@@ -328,3 +328,14 @@ chisq.test(tab)
 fisher.test(tab)
 ```
 **The chi-squared test did not show any significant association between sex and smoking and showed a significant association (p < 0.05), indicating that women smoked less than men.**
+
+#### Are there any correlations between variables?
+
+i don't have the time to do all this correlation but i can tell some suggestion about that : 
+Weight and height were strongly positively correlated
+maybe not correlation between alcohol consumption and weight
+Age can be negatively correlated with cosumption of alcohol
+maybe between alcohol and tabc it's possible. 
+
+
+
