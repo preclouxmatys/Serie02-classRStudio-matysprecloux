@@ -146,3 +146,9 @@ Our correlation and regression analyses showed that PANU was more strongly assoc
 - **Variance:** the average of the squared differences between each value and the mean.  
 - **Standard deviation (SD):** the square root of the variance; expressed in the same units as the data.  
 *(Reference: Altman, 1991; Field, 2017)*
+
+## 3. What is a normal distribution?
+A bell-shaped, symmetrical distribution where mean = median = mode.  
+About 68% of data lie within 1 SD of the mean, 95% within 2 SD.  
+*(Reference: Altman & Bland, 1995, BMJ – open access)*
+
