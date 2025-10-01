@@ -257,8 +257,12 @@ boxplot(prepost$Before, prepost$After,
  p < 0.05, indicating that the treatment condition led to higher values compared to control.”*  
 (or, if non-significant: *“… no significant effect was observed, p > 0.05, suggesting that the treatment did not influence ... .”*)
 
-```{r}
+So it's normal, i do a T-test 
 
+```{r}
+t.test(prepost$After, prepost$Before, paired = TRUE)
 ```
+**p<0,05 it's significant**
+
 
 
