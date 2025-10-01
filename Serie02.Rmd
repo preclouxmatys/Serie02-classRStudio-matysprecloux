@@ -46,7 +46,7 @@ In your notebook, make a clear description of the experiment, the variables and 
 ## Corelation analysis
 Below are some questions to guide your analysis.
 
-- Is PANU correlated with SANU and/or EENU?
+#### Is PANU correlated with SANU and/or EENU?
 
 we use spearman correlation bc we do not have assumptions about the distributions of the data, and we do not assume linear relationships between the variables 
 
@@ -54,9 +54,14 @@ we use spearman correlation bc we do not have assumptions about the distribution
 cor.test(nonuse$PANU, nonuse$SANU, method = "spearman")
 
 ```
+#### with EENU
+
+```{r}
+cor.test(nonuse$PANU, nonuse$EENU, method = "spearman")
+```
 
 
-- Visualize the PANU-SANU relationship (and the PANU-EENU relationship)
+#### Visualize the PANU-SANU relationship and the PANU-EENU relationship
 
 ```{r plot sanu+lm}
 library(ggplot2)
@@ -80,7 +85,7 @@ ggplot(nonuse, aes(x=PANU, y=EENU)) +
 ```
 
 
--linear regression for PANU-SANU (and for PANU-EENU)
+#### linear regression for PANU-SANU 
 
 ```{r}
 lm_sanu <- lm(SANU ~ PANU, data=nonuse)
@@ -90,7 +95,7 @@ slope <- coef(lm_sanu)[2]
 intercept <- coef(lm_sanu)[1]
 cat(" Regression equation : SANU=", slope, "*PANU +", intercept, "\n")
 ```
-linear regression for PANU-EENU
+#### linear regression for PANU-EENU
 
 ```{r PANU-EENU}
 lm_eenu <- lm(EENU ~ PANU, data=nonuse)
@@ -102,7 +107,7 @@ cat(" Regression equation : EENU=", slope, "*PANU +", intercept, "\n")
 ```
 
 
-- regression equations: PANU = a * SANU + b and PANU = a * EENU + b
+#### regression equations: PANU = a * SANU + b and PANU = a * EENU + b
 
 ```{r equations}
 slope <- 0.08932839
@@ -123,11 +128,11 @@ cat("Regression equation : PANU =", a, "* EENU +", b, "\n")
 ```
 
 
-- Summarize results : 
+#### Summarize results : 
 
 Our correlation and regression analyses showed that PANU was more strongly associated with EENU than with SANU. The regression equation indicated that a one-unit increase in EENU was associated with an estimated 1.77-unit increase in PANU (PANU = 1.77·EENU – 5.82). By contrast, the relationship with SANU was weaker, with the regression equation suggesting that a one-unit increase in SANU corresponded to an estimated 11.20-unit increase in PANU, but with a higher intercept and greater variability (PANU = 11.20·SANU – 6.56). Taken together, these results support the hypothesis that proximal arm non-use is driven mainly by elbow extension non-use, while shoulder antepulsion non-use plays a less consistent role.
 
-- What are the limits of your analysis (by ChatGPT)
+#### What are the limits of your analysis (by ChatGPT)
 
 - The sample size was limited, which reduces statistical power and may exaggerate or obscure true relationships.
 - Correlation and linear regression do not establish causality; the observed associations may be influenced by other compensatory strategies or biomechanical factors.
@@ -195,3 +200,12 @@ The probability of obtaining results as extreme as those observed, if the null h
 - **Unpaired test:** used when comparing independent groups.  
 *(Reference: Field, 2017)*
 ---
+
+# 2. Effect of traitement 
+## the data
+
+```{r prépost}
+prepost <- read.csv("data/test_data/PrePost.csv", sep=',', header=TRUE)
+summary(prepost)
+```
+
