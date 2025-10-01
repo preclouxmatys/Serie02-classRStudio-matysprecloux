@@ -155,3 +155,8 @@ About 68% of data lie within 1 SD of the mean, 95% within 2 SD.
 ## 4. What is a statistical test?
 A statistical test is a method used to decide, based on data, whether an observed effect is likely real or due to chance.  
 *(Reference: Howell, 2013)*
+
+## 5. When to use a statistical test?
+When comparing groups, testing relationships, or evaluating hypotheses.  
+Examples: comparing treatment vs control, testing correlation between two variables.  
+*(Reference: Derrick et al., 2017 – open access)*
