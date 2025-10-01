@@ -295,7 +295,18 @@ wilcox.test(alcool ~ snore, data = snore)
 ```
 **the test showed that snorers consumed significantly more alcohol than non-snorers**
 
+#### smoke
 
 
+```{r}
+
+tab <- table(snore$snore, snore$tabac)
+tab
+
+chisq.test(tab)
+
+fisher.test(tab)
+```
+**Neither the chi-squared test (p = 0.41) nor Fisher’s exact test (p = 0.38) showed a significant association between snoring status and smoking behavior. These results indicate that snorers do not smoke more than non-snorers.** 
 
 
