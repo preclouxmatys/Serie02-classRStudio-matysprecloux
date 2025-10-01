@@ -264,5 +264,12 @@ t.test(prepost$After, prepost$Before, paired = TRUE)
 ```
 **p<0,05 it's significant**
 
+## 2.3 Testing some stereotypes
+#### 2.3.1 The data
+
+```{r}
+snore <- read.csv("data/test_data/snore.txt", sep=';', header=TRUE)
+summary(snore)
+```
 
 
