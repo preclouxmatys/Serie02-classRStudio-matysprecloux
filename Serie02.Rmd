@@ -338,11 +338,9 @@ Age can be negatively correlated with cosumption of alcohol
 maybe between alcohol and tabc it's possible. 
 
 #### Can you predict the value of one variable from the others?
-
-We could use logistic regression to predict whether an individual snores or not, based on their age, weight, and alcohol consumption. This would allow us to identify risk factors for snoring.
-
 #### Can you classify individuals based on their variables?
 
-Clustering methods (such as k-means) could be applied to group individuals with similar profiles (e.g., heavy drinkers and smokers vs. non-drinkers and non-smokers). This would provide insight into lifestyle patterns.
+Beyond the correlation and group comparison analyses carried out in this series, it would be interesting to explore more advanced approaches from data mining. For instance, one could use logistic regression to predict the probability of being a snorer based on individual characteristics such as age, weight, or alcohol consumption. Such a model would not only highlight the most important predictive variables but could also help target preventive actions more effectively. In addition, unsupervised classification methods, such as clustering or principal component analysis (PCA), could be applied to group individuals into lifestyle profiles (e.g., “young non-smokers/non-drinkers” vs. “adult smokers and drinkers”). These approaches open the way to a more comprehensive understanding of the interactions between behavior and health, but they require larger datasets and a clear reflection on the objectives guiding the analysis.
+
 
 
