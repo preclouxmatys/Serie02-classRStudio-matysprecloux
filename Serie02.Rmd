@@ -268,23 +268,16 @@ t.test(prepost$After, prepost$Before, paired = TRUE)
 #### 2.3.1 The data
 
 ```{r}
-snore <- read.csv("data/test_data/snore.csv", sep=';', header=TRUE)
+snore <- read.csv("data/test_data/snore.", sep=';', header=TRUE)
 summary(snore)
 ```
+
+
 ```{r}
-snorers   <- snore$weight[snore$Snorer == "O"]
-non_snorers <- snore$weight[snore$Snorer == "N"]
+snore$weight <- as.numeric(snore$weight)
+shapiro.test(snore$weight[snore$snore == "O"])  # ronfleurs
+shapiro.test(snore$weight[snore$snore == "N"])  # non-ronfleurs
 
-# 3. Test de normalité pour chaque groupe
-shapiro.test(snorers)
-shapiro.test(non_snorers)
-
-# 4. Choix du test statistique
-# Si les 2 groupes ~ Normaux => t-test
-t.test(Weight ~ Snorer, data = snore)
-
-# Sinon => test de Mann-Whitney (non-paramétrique)
-wilcox.test(Weight ~ Snorer, data = snore)
 ```
 
 
