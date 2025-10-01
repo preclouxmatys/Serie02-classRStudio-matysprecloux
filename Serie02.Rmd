@@ -200,13 +200,60 @@ The probability of obtaining results as extreme as those observed, if the null h
 ## the data
 
 ```{r prépost}
-prepost <- read.csv("data/test_data/PrePost.csv", sep=',', header=TRUE)
+prepost <- read.csv("data/test_data/PrePost.csv", sep=';', header=TRUE)
 summary(prepost)
+
+str(prepost)
 ```
 
 | Variable | Description         | Unit   | Possible values             | Expected change           |
 |:---------|:-------------------:|:------:|:---------------------------:|--------------------------:|
 | perf     | Performance Measure | bpm    | Numeric values (50–200)     | increase after rehab      |
 | time     | Time of measurement | factor | "Before" / "After"          | no change                 |
+
+
+## 2.2.2 The analysis
+
+#### Does the treatment have an effect?
+To determine whether the treatment has an effect, we test the null hypothesis (H₀) that there is no difference in the measured variable(s) between treatment and control (or before and after treatment).  
+If the statistical test rejects H₀ (p < 0.05), we conclude that the treatment has a significant effect.  
+If H₀ is not rejected (p > 0.05), we conclude that the treatment has no measurable effect on the variables of interest.
+
+### What comparison are you going to make?
+The comparison depends on the experimental design:  
+- If the same participants were measured before and after the treatment, the appropriate comparison is within-subject (paired), for example comparing PANU values pre- vs post-treatment.  
+- If two independent groups were measured (treatment group vs control group), the appropriate comparison is between groups (unpaired).  
+In both cases, the aim is to determine whether the treatment condition leads to significantly different values of the variables (PANU, SANU, or EENU).
+
+#### Which test will you use? Parametric or non-parametric?
+If the data are normally distributed and variances are homogeneous,  
+use a **parametric test** (paired or unpaired t-test, ANOVA).  
+If these assumptions are not satisfied,  
+use a **non-parametric test** (Wilcoxon signed-rank for paired data, Mann–Whitney for unpaired data).
+
+```{r}
+shapiro.test(prepost$Before)
+shapiro.test(prepost$After)
+
+prepost$Diff <- prepost$After - prepost$Before
+shapiro.test(prepost$Diff)
+```
+**p<0,05 so it's normal**
+
+
+#### Which graph illustrates the effect of the treatment?
+A **boxplot** to visualize distributions between conditions
+
+```{r}
+```
+
+#### What sentence will you write in your thesis to explain your result?
+*“Our statistical analysis showed a significant effect of the treatment on ... ,  
+ p < 0.05, indicating that the treatment condition led to higher values compared to control.”*  
+(or, if non-significant: *“… no significant effect was observed, p > 0.05, suggesting that the treatment did not influence ... .”*)
+
+```{r}
+
+```
 
 
