@@ -190,4 +190,8 @@ The probability of obtaining results as extreme as those observed, if the null h
 - **Type II error (β):** failing to reject the null hypothesis when it is false (false negative).  
 *(Reference: Howell, 2013)*
 
+## 11. What is the difference between a paired and an unpaired test?
+- **Paired test:** used when data are linked (before/after on same subjects, matched pairs).  
+- **Unpaired test:** used when comparing independent groups.  
+*(Reference: Field, 2017)*
 ---
