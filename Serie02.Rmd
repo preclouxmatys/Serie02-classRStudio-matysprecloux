@@ -58,8 +58,52 @@ cor.test(nonuse$PANU, nonuse$SANU, method = "spearman")
 
 - Visualize the PANU-SANU relationship (and the PANU-EENU relationship)
 
-- Perform a linear regression for PANU-SANU (and for PANU-EENU)
+```{r plot sanu+lm}
+library(ggplot2)
+ggplot(nonuse, aes(x=PANU, y=SANU)) +
+  geom_point() +
+  geom_smooth(method='lm', formula= y~x, color='blue', se=T) + 
+  #xlim(-100, 100) +
+  #ylim(-100, 100) +
+  labs(title= "PANU vs SANU", x="PANU(x)", y="SANU(%)") + 
+  theme_minimal()
+
+library(ggplot2)
+ggplot(nonuse, aes(x=PANU, y=EENU)) +
+  geom_point() +
+  geom_smooth(method='lm', formula= y~x, color='blue', se=T) + 
+  #xlim(-100, 100) +
+  #ylim(-100, 100) +
+  labs(title= "PANU vs EENU", x="PANU(x)", y="EENU(%)") + 
+  theme_minimal()
+
+```
+
+
+-linear regression for PANU-SANU (and for PANU-EENU)
+
+```{r}
+lm_sanu <- lm(SANU ~ PANU, data=nonuse)
+summary(lm_sanu)
+coef(lm_sanu)
+slope <- coef(lm_sanu)[2]
+intercept <- coef(lm_sanu)[1]
+cat(" Regression equation : SANU=", slope, "*PANU +", intercept, "\n")
+```
+linear regression for PANU-EENU
+
+```{r PANU-EENU}
+lm_eenu <- lm(EENU ~ PANU, data=nonuse)
+summary(lm_eenu)
+coef(lm_eenu)
+slope <- coef(lm_eenu)[2]
+intercept <- coef(lm_eenu)[1]
+cat(" Regression equation : EENU=", slope, "*PANU +", intercept, "\n")
+```
+
 
 - Give the regression equations: PANU = a * SANU + b and PANU = a * EENU + b
+
 - Summarize your results as you would do in your master’s thesis report, or as in a scientific article (e.g., What sentence will you write in the article explaining your result?).
-- What are the limits of your analysis?
+- What are the limits of your analysis
+
