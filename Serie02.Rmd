@@ -185,4 +185,9 @@ The probability of obtaining results as extreme as those observed, if the null h
 - Large p-value → data consistent with the null hypothesis.  
 *(Reference: Altman, 1991)*
 
+## 10. What is the risk of error when using a statistical test?
+- **Type I error (α):** rejecting the null hypothesis when it is true (false positive).  
+- **Type II error (β):** failing to reject the null hypothesis when it is false (false negative).  
+*(Reference: Howell, 2013)*
+
 ---
