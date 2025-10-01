@@ -142,60 +142,55 @@ Our correlation and regression analyses showed that PANU was more strongly assoc
 
 # 2.1 Statistical Concepts
 
-## 1. What is a median? A mean?
-- **Mean:** the sum of all values divided by the number of values. It is sensitive to extreme values (outliers).  
-- **Median:** the middle value when the data are ordered. Less sensitive to outliers.  
-*(Reference: Howell, 2013; Field, 2017)*
-
-## 2. What is a variance? A standard deviation?
+### 2. What is a variance? A standard deviation?
 - **Variance:** the average of the squared differences between each value and the mean.  
 - **Standard deviation (SD):** the square root of the variance; expressed in the same units as the data.  
 *(Reference: Altman, 1991; Field, 2017)*
 
-## 3. What is a normal distribution?
+### 3. What is a normal distribution?
 A bell-shaped, symmetrical distribution where mean = median = mode.  
 About 68% of data lie within 1 SD of the mean, 95% within 2 SD.  
 *(Reference: Altman & Bland, 1995, BMJ)*
 
-## 4. What is a statistical test?
+### 4. What is a statistical test?
 A statistical test is a method used to decide, based on data, whether an observed effect is likely real or due to chance.  
 *(Reference: Howell, 2013)*
 
-## 5. When to use a statistical test?
+### 5. When to use a statistical test?
 When comparing groups, testing relationships, or evaluating hypotheses.  
 Examples: comparing treatment vs control, testing correlation between two variables.  
 *(Reference: Derrick et al., 2017 )*
 
-## 6. What is a parametric test? A non-parametric test?
+### 6. What is a parametric test? A non-parametric test?
 - **Parametric tests:** assume that data follow a certain distribution (usually normal). Examples: t-test, ANOVA, Pearson correlation.  
 - **Non-parametric tests:** make fewer assumptions about distribution. Examples: Mann–Whitney, Wilcoxon, Spearman correlation.  
 *(Reference: Politi et al., 2021 )*
 
-## 7. What are the assumptions of parametric tests?
+### 7. What are the assumptions of parametric tests?
 - Normal distribution (or approximately normal).  
 - Homogeneity of variances.  
 - Independence of observations.  
 - Linearity (for regression).  
 *(Reference: Altman, 1991; Field, 2017)*
 
-## 8. What are the assumptions of non-parametric tests?
+### 8. What are the assumptions of non-parametric tests?
 - Fewer assumptions are required.  
 - Data can be ordinal or non-normal.  
 - Independence of observations is still required.  
 *(Reference: Mishra et al., 2019)*
 
-## 9. What is a p-value?
+### 9. What is a p-value?
 The probability of obtaining results as extreme as those observed, if the null hypothesis were true.  
 - Small p-value (< 0.05) → evidence against the null hypothesis.  
 - Large p-value → data consistent with the null hypothesis.  
 *(Reference: Altman, 1991)*
 
-## 10. What is the risk of error when using a statistical test?
+### 10. What is the risk of error when using a statistical test?
 - **Type I error (α):** rejecting the null hypothesis when it is true (false positive).  
 - **Type II error (β):** failing to reject the null hypothesis when it is false (false negative).  
 *(Reference: Howell, 2013)*
 
-## 11. What is the difference between a paired and an unpaired test?
+### 11. What is the difference between a paired and an unpaired test?
 - **Paired test:** used when data are linked (before/after on same subjects, matched pairs).  
 - **Unpaired test:** used when comparing independent groups.  
 *(Reference: Field, 2017)*
@@ -208,4 +203,10 @@ The probability of obtaining results as extreme as those observed, if the null h
 prepost <- read.csv("data/test_data/PrePost.csv", sep=',', header=TRUE)
 summary(prepost)
 ```
+
+| Variable | Description         | Unit   | Possible values             | Expected change           |
+|:---------|:-------------------:|:------:|:---------------------------:|--------------------------:|
+| perf     | Performance Measure | bpm    | Numeric values (50–200)     | increase after rehab      |
+| time     | Time of measurement | factor | "Before" / "After"          | no change                 |
+
 
