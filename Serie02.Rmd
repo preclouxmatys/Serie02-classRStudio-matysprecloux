@@ -179,4 +179,10 @@ Examples: comparing treatment vs control, testing correlation between two variab
 - Independence of observations is still required.  
 *(Reference: Mishra et al., 2019)*
 
+## 9. What is a p-value?
+The probability of obtaining results as extreme as those observed, if the null hypothesis were true.  
+- Small p-value (< 0.05) → evidence against the null hypothesis.  
+- Large p-value → data consistent with the null hypothesis.  
+*(Reference: Altman, 1991)*
+
 ---
