@@ -160,3 +160,9 @@ A statistical test is a method used to decide, based on data, whether an observe
 When comparing groups, testing relationships, or evaluating hypotheses.  
 Examples: comparing treatment vs control, testing correlation between two variables.  
 *(Reference: Derrick et al., 2017 – open access)*
+
+## 6. What is a parametric test? A non-parametric test?
+- **Parametric tests:** assume that data follow a certain distribution (usually normal). Examples: t-test, ANOVA, Pearson correlation.  
+- **Non-parametric tests:** make fewer assumptions about distribution. Examples: Mann–Whitney, Wilcoxon, Spearman correlation.  
+*(Reference: Politi et al., 2021 – open access)*
+
