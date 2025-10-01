@@ -278,6 +278,7 @@ snore$weight <- as.numeric(snore$weight)
 shapiro.test(snore$weight[snore$snore == "O"])  # ronfleurs
 shapiro.test(snore$weight[snore$snore == "N"])  # non-ronfleurs
 
+wilcox.test(weight ~ snore, data = snore)
 ```
 
 
