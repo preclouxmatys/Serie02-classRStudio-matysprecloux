@@ -271,7 +271,8 @@ t.test(prepost$After, prepost$Before, paired = TRUE)
 snore <- read.csv("data/test_data/snore.", sep=';', header=TRUE)
 summary(snore)
 ```
-
+## 2.3.2 the analysis 
+### Are snorers fatter ?
 
 ```{r}
 snore$weight <- as.numeric(snore$weight)
@@ -280,5 +281,21 @@ shapiro.test(snore$weight[snore$snore == "N"])  # non-ronfleurs
 
 wilcox.test(weight ~ snore, data = snore)
 ```
+
+**No snorers are not fatter than non snorers** 
+
+### Do snorers drink or smoke more?
+#### drink 
+
+```{r}
+shapiro.test(snore$alcool[snore$snore == "O"])
+shapiro.test(snore$alcool[snore$snore == "N"])
+
+wilcox.test(alcool ~ snore, data = snore)
+```
+**the test showed that snorers consumed significantly more alcohol than non-snorers**
+
+
+
 
 
