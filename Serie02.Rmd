@@ -245,6 +245,11 @@ shapiro.test(prepost$Diff)
 A **boxplot** to visualize distributions between conditions
 
 ```{r}
+boxplot(prepost$Before, prepost$After,
+        names = c("Before","After"),
+        col = c("lightblue","lightgreen"),
+        main = "Performance Before vs After",
+        ylab = "Performance")
 ```
 
 #### What sentence will you write in your thesis to explain your result?
