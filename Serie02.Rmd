@@ -319,3 +319,12 @@ wilcox.test(weight ~ sex, data = snore)
 ```
 **Men aren't fatter because is'nt significant** 
 
+#### Do women smoke less?
+
+```{r}
+tab <- table(snore$sex, snore$tabac)
+tab
+chisq.test(tab)
+fisher.test(tab)
+```
+**The chi-squared test did not show any significant association between sex and smoking and showed a significant association (p < 0.05), indicating that women smoked less than men.**
