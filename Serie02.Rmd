@@ -123,7 +123,16 @@ cat("Regression equation : PANU =", a, "* EENU +", b, "\n")
 ```
 
 
-- Summarize your results as you would do in your master’s thesis report, or as in a scientific article (e.g., What sentence will you write in the article explaining your result?).
-- What are the limits of your analysis
+- Summarize results : 
 
+Our correlation and regression analyses showed that PANU was more strongly associated with EENU than with SANU. The regression equation indicated that a one-unit increase in EENU was associated with an estimated 1.77-unit increase in PANU (PANU = 1.77·EENU – 5.82). By contrast, the relationship with SANU was weaker, with the regression equation suggesting that a one-unit increase in SANU corresponded to an estimated 11.20-unit increase in PANU, but with a higher intercept and greater variability (PANU = 11.20·SANU – 6.56). Taken together, these results support the hypothesis that proximal arm non-use is driven mainly by elbow extension non-use, while shoulder antepulsion non-use plays a less consistent role.
 
+- What are the limits of your analysis (by ChatGPT)
+
+- The sample size was limited, which reduces statistical power and may exaggerate or obscure true relationships.
+- Correlation and linear regression do not establish causality; the observed associations may be influenced by other compensatory strategies or biomechanical factors.
+- The analysis was based on a specific reaching task under controlled conditions, which may not generalize to all functional activities.
+- Measurement errors (marker placement, motion capture noise, anthropometric estimations) may affect the precision of non-use scores.
+- Inter-individual variability (stroke severity, recovery stage, motor strategy) was not controlled, which could contribute to unexplained variance.
+
+⸻
