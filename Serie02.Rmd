@@ -102,8 +102,28 @@ cat(" Regression equation : EENU=", slope, "*PANU +", intercept, "\n")
 ```
 
 
-- Give the regression equations: PANU = a * SANU + b and PANU = a * EENU + b
+- regression equations: PANU = a * SANU + b and PANU = a * EENU + b
+
+```{r equations}
+slope <- 0.08932839
+intercept <- 0.5860521
+
+a <- 1 / slope
+b <- -intercept / slope
+
+cat("Regression equation : PANU =", a, "* SANU +", b, "\n")
+
+slope <- 0.5646221
+intercept <- 3.283697
+# PANU = a*EENU + b
+a <- 1 / slope
+b <- -intercept / slope
+
+cat("Regression equation : PANU =", a, "* EENU +", b, "\n")
+```
+
 
 - Summarize your results as you would do in your master’s thesis report, or as in a scientific article (e.g., What sentence will you write in the article explaining your result?).
 - What are the limits of your analysis
+
 
