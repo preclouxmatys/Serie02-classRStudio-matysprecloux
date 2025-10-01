@@ -152,3 +152,6 @@ A bell-shaped, symmetrical distribution where mean = median = mode.
 About 68% of data lie within 1 SD of the mean, 95% within 2 SD.  
 *(Reference: Altman & Bland, 1995, BMJ – open access)*
 
+## 4. What is a statistical test?
+A statistical test is a method used to decide, based on data, whether an observed effect is likely real or due to chance.  
+*(Reference: Howell, 2013)*
