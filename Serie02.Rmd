@@ -309,4 +309,13 @@ fisher.test(tab)
 ```
 **Neither the chi-squared test (p = 0.41) nor Fisher’s exact test (p = 0.38) showed a significant association between snoring status and smoking behavior. These results indicate that snorers do not smoke more than non-snorers.** 
 
+#### Are men fatter ? 
+
+```{r}
+shapiro.test(snore$weight[snore$sex == "H"])
+shapiro.test(snore$weight[snore$sex == "F"])
+
+wilcox.test(weight ~ sex, data = snore)
+```
+**Men aren't fatter because is'nt significant** 
 
