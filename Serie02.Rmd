@@ -173,3 +173,10 @@ Examples: comparing treatment vs control, testing correlation between two variab
 - Linearity (for regression).  
 *(Reference: Altman, 1991; Field, 2017)*
 
+## 8. What are the assumptions of non-parametric tests?
+- Fewer assumptions are required.  
+- Data can be ordinal or non-normal.  
+- Independence of observations is still required.  
+*(Reference: Mishra et al., 2019)*
+
+---
