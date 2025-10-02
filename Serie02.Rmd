@@ -268,7 +268,7 @@ t.test(prepost$After, prepost$Before, paired = TRUE)
 #### 2.3.1 The data
 
 ```{r}
-snore <- read.csv("data/test_data/snore.", sep=';', header=TRUE)
+snore <- read.csv("data/test_data/snore.csv", sep=';', header=TRUE)
 summary(snore)
 ```
 ## 2.3.2 the analysis 
