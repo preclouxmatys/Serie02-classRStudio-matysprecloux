@@ -8,8 +8,7 @@ The goal was to practice **correlation, regression, and hypothesis testing** usi
 1. **Clinical dataset** on upper limb non-use after stroke (PANU, SANU, EENU).  
 2. **Lifestyle dataset** on snoring stereotypes (age, weight, height, alcohol, sex, snore, tabac).  
 
-
-## 🧾 Content of the notebook
+## Content of the notebook
 ### Part 1 – Clinical dataset: Upper limb non-use
 1. Descriptive statistics for PANU, SANU, EENU.  
 2. Correlation analysis (Spearman) → weak but significant correlation between PANU and SANU.  
@@ -27,8 +26,6 @@ The goal was to practice **correlation, regression, and hypothesis testing** usi
 - Boxplots with paired lines illustrate the effect.  
 
 ### Part 4 – Snoring stereotypes
-
-**Research questions tested with statistical methods:**  
 
 1. **Are snorers fatter?**  
    - Compared weight between snorers and non-snorers.  
@@ -59,7 +56,6 @@ The goal was to practice **correlation, regression, and hypothesis testing** usi
    - Example: *weight ~ height* (positive correlation), *age ~ alcohol* (negative correlation).  
    
 ### Key results
-
 - **Clinical dataset**: PANU correlates more strongly with EENU (elbow extension non-use) than with SANU.  
 - **Before/After experiment**: Significant performance improvement after treatment (p ≈ 0.001).  
 - **Snoring stereotypes**:  
